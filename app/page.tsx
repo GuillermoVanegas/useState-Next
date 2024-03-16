@@ -1,14 +1,13 @@
 import Head from 'next/head';
 import Counter from './components/Counter';
-import Header from './components/layout';
-import Footer from './components/footer';
+import Header from '../app/layout';
 import Image from 'next/image';
 import styles from '../app/page.module.css'; // Importa tus estilos CSS
 
 export default function Home() {
   return (
     <div className={styles.container}> {/* Utiliza el contenedor y aplica estilos */}
-      <Header />
+     
       <Head>
         <title>Contador</title>
         <link rel="icon" href="/favicon.ico" />
@@ -27,8 +26,6 @@ export default function Home() {
         <p className={styles.description}>¿El bitcoin sigue siendo buena inversion?</p>
         <Counter />
       </main>
-
-      <Footer />
       
     </div>
   );
